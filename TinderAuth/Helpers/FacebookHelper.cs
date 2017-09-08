@@ -19,9 +19,7 @@ namespace TinderAuth.Helpers
                 {
                     UserAgent = "Tinder/7.5.3 (iPhone; iOS 10.3.2; Scale/2.00)"
                 };
-                
-                browser.SetHeader("Host: m.facebook.com");
-                
+
                 browser.Navigate(FacebookUrl);
 
                 browser.Find("input", FindBy.Name, "email").Value = email;
