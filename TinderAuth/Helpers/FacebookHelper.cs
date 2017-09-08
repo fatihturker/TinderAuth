@@ -20,10 +20,7 @@ namespace TinderAuth.Helpers
                     UserAgent = "Tinder/7.5.3 (iPhone; iOS 10.3.2; Scale/2.00)"
                 };
                 
-                browser.SetHeader("Host: facebook.com");
-                browser.SetHeader("Connection: keep-alive");
-                browser.SetHeader("Referer: https://www.facebook.com/");
-                browser.SetHeader("Upgrade-Insecure-Requests: 1");
+                browser.SetHeader("Host: m.facebook.com");
                 
                 browser.Navigate(FacebookUrl);
 
